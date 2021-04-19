@@ -10,6 +10,8 @@ import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+
 // Created by Sean Corcoran for unit SIT305 - Deakin University 19/04/2020)
 
 public class MainActivity extends AppCompatActivity {
@@ -33,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
     // If the timer is actively running.
     boolean timerActive = false;
 
-    // Workout info related strings.
+    // Workout info related strings (with their starting values)
     String currentWorkoutType = "";
-    String pastWorkoutTime = "00:00:00";
-    String pastWorkoutType = "nil";
+    String pastWorkoutTime = "00:00";
+    String pastWorkoutType = "push ups";
 
     // sharedPreferences Strings
     String TOTAL_TIME = "TOTAL_TIME";
